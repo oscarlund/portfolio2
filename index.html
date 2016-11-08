@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>Bootstrap 4 - NAVBAR</title>
+      <!--Bootstrap-->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/stylesheet.css" rel="stylesheet">
+      <link href="css/layout.css" rel="stylesheet">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/custom.js"></script>
+    	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+
+      <script type="text/javascript">
+      $(function () {
+
+    		var filterList = {
+
+    			init: function () {
+
+    				// MixItUp plugin
+    				// http://mixitup.io
+    				$('#portfoliolist').mixItUp({
+      				selectors: {
+        			  target: '.portfolio',
+        			  filter: '.filter'
+        		  },
+        		  load: {
+          		  filter: '.icon'
+          		}
+    				});
+    			}
+    		};
+    		// Run the show!
+    		filterList.init();
+    	});
+    	</script>
+
+      <!--Scroll-->
+      <script type="text/javascript">
+      $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+            }
+          }
+        });
+      });
+      </script>
+
+      <script>
+        /* Open when someone clicks on the span element */
+        function openNav() {
+            document.getElementById("myNav").style.width = "300px";
+        }
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+            document.getElementById("myNav").style.width = "40px";
+        }
+    </script>
+
+        <script>
+        $(document).ready( function(){
+          $('#target').click( function() {
+              var toggleWidth = $("#myNav").width() == 300 ? "40px" : "300px";
+              $('#myNav').animate({ width: toggleWidth }, 200, 'swing');
+          });
+        });
+      </script>
+
+      </head>
+
+
+      <body id="bootstrap-overrides" style="position: relative;">
+      <!--NAVBAR-->
+      <nav class="navbar navbar-custom navbar-fixed-top">
+      <div class="container">
+        <button type="button" class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse">
+          <span class="sr-only">Toogle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <a class="navbar-brand" href="#">OSCAR LUND</a>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#two" class="dropdown-toggle"
+              data-toggle="dropdown">SKILLS <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <!--li class="dropdown-header">Examples--><!--/li-->
+                    <li><a href="#two">UX / UI</a></li>
+                    <li><a href="#two">{DEV}</a></li>
+                    <li><a href="#two">LEADERSHIP</a></li>
+                    <li><a href="#two">BUSINESS STRATEGY</a></li>
+                    <li><a href="#two">DESIGN THINKING</a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="#three">PORTFOLIO</a></li>
+            <li class="dropdown">
+              <a href="#four" class="dropdown-toggle"
+              data-toggle="dropdown">EDUCATION <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <!--li class="dropdown-header">Examples--><!--/li-->
+                    <li><a href="#four">CHALMERS</a></li>
+                    <li><a href="#four">ETSEIB</a></li>
+                    <li><a href="#four">HARVARD</a></li>
+                </ul>
+            </li>
+            <li><a href="#five">CONTACT</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+      <!--NAVBAR END-->
+
+      <!-- The overlay -->
+      <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <a class="closebtn" style="font-size:16px; margin: 200px 5% 0 5%" href="#">Photoshop</a>
+        <a class="closebtn" style="font-size:16px; margin: 250px 5% 0 5%" href="#">HTML</a>
+        <a class="closebtn" style="font-size:16px; margin: 300px 5% 0 5%" href="#">Design Thinking</a>
+        <a class="closebtn" style="font-size:16px; margin: 350px 5% 0 5%" href="#">UX Design</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <!-- Use any element to open/show the overlay navigation menu -->
+          <div id="target">
+          <span style="display:block; color:#f0f1f2; float:right; margin-top:20vh; font-family:open sans, sans-serif; letter-spacing:2px; font-weight:400; margin-right: -10px; font-size:14px; transform: rotate(270deg) -ms-transform: rotate(270deg); /* IE 9 */
+          -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */">SKILLS</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="float-beat" id="image">
+        <div class="heart-content" style="margin-top:130%; margin-left:-17%;">
+          <div class="heart2 heart4"></div>
+          <div class="heart2 heart5"></div>
+          <div class="heart2 heart6"></div>
+        </div>
+      </div>
+
+<!--Everything below left-margin:40px;--->
+
+      <!--Design + Strategy-->
+    <div class="text-in-1"style="text-align:center; padding-left:40px;">
+      <div style="display: inline-block; margin:170px 0 220px 0px; text-align:center;">
+        <h1 class="text-in-1" style="color:#313746;">Design <span style="font-size:50pt;">+</span> Strategy</h1>
+        <h2 class="text-in-1" style="color:#474E62;">Oscar Lund</h1>
+          <div class="p-container-700">
+              <p class="text-in-1" style="color:#686F84;">My name is Oscar, and I make things. As a creative artist, I love to shape beauty. Both estethically, and functionally. <b>Beautiful things are lovely, don't you agree?</b>
+              As design can be a big word, I like to refer to it as; <i>the creation of products people want to interact with.</i> For example, when I develop a website, I think of the development as; <i>Creating a place where people want to spend time.
+              Just like a living room, or a kitchen.</i></p>
+          </div>
+      </div>
+      <div class="heart-content">
+        <a href="#two"><div class="arrow arrow-down"><img style="width:30px;" src="https://dl.dropboxusercontent.com/s/k0nofv608vx3jst/arrow-down_200.png"></img></div> </a>
+        <div class="heart heart1"></div>
+        <div class="heart heart2"></div>
+        <div class="heart heart3"></div>
+      </div>
+    </div>
+
+    <!--Skills-->
+  <div id="two" class="container-blue"style="text-align:center; padding: 10px 0px 30px 40px;">
+    <div style="display: inline-block; margin:135px 0 20px 0px; text-align:center;">
+      <h1  class="h1-2" style="color:#f0f1f2;">Skills</h1>
+      <h2 class="text-in-1" style="color:#f0f1f2;">I KNOW A THING OR TWO ABOUT</h1>
+        <!--div class="p-container-700">
+            <p class="text-in-1" style="color:#f0f1f2;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi elit, finibus
+            sit amet mi tincidunt, ornare efficitur lorem. Cras aliquet tellus ut dapibus
+            fringilla. Sed dictum nunc metus, non efficitur turpis pellentesque gravida.
+            Cras accumsan ultricies sem, id blandit justo dignissim eget. Pellentesque ut
+            metus feugiat, pharetra eros at, lobortis felis.</p>
+        </div-->
+    </div>
+    <!--Skills IMGs-->
+    <div class="lidiv">
+      <ul style="text-align:center; color:#fff;" class="imgs">
+        <li><img class="img-skill" style="max-width:120px; border-radius:50%;" src="https://dl.dropboxusercontent.com/s/jai41kxeurorla0/ux-ui-200.png?dl=0"><h3>UX / UI DESIGN</h3><hr class="hr-one"><p class="hr-three" style="text-align:center; margin-top:-10px; font-size:14px; padding: 0px 10px; color:#f2f2f2; font-family:'open sans', sans-serif;">Enhancing user satisfaction by improving the usability, accessibility, and pleasure provided in the interaction with the product.</p></li>
+        <li><img class="img-skill" style="max-width:120px; border-radius:50%;" src="https://dl.dropboxusercontent.com/s/5xe37stbw9mbqtc/fron-end-dev-200.png?dl=0"><h3>{FRONT END DEV}</h3><hr class="hr-one"><p class="hr-three" style="text-align:center; margin-top:-10px; font-size:14px; padding: 0px 10px; color:#f2f2f2; font-family:'open sans', sans-serif;">The practice of producing HTML, CSS and JavaScript for a website or Web Application so that a user can see and interact with them directly.</p></li>
+        <li><img class="img-skill" style="max-width:120px; border-radius:50%;" src="https://dl.dropboxusercontent.com/s/wffweznkfx8r5io/design-thinking-200.png?dl=0"><h3>DESIGN THINKING</h3><hr class="hr-one"><p class="hr-three" style="text-align:center; margin-top:-10px; font-size:14px; padding: 0px 10px; color:#f2f2f2; font-family:'open sans', sans-serif;"> A methodology not exclusive for designers, that helps people understand and develop creative ways to solve a specific issue, generally business oriented.</p></li>
+        <li><img class="img-skill" style="max-width:120px; border-radius:50%;" src="https://dl.dropboxusercontent.com/s/wqo42085xijj99d/business-strategy-200.png?dl=0"><h3>BUSINESS STRATEGY</h3><hr class="hr-one"><p class="hr-three" style="text-align:center; margin-top:-10px; font-size:14px; padding: 0px 10px; color:#f2f2f2; font-family:'open sans', sans-serif;">Involves specifying the organization's objectives, developing policies and plans designed to achieve these objectives.</p></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!--Contact Me 1-->
+<div class="container-grey" style="text-align:center; padding-left:40px;">
+  <div style="display: inline-block; margin:130px 0 30px 0px; text-align:center;">
+    <h1 class="h1-2" style="color:#f0f1f2;">Let's Connect.</h1>
+    <h2 class="text-in-1" style="color:#f0f1f2;">how may I help you?</h1>
+      <div class="p-container-700">
+          <p class="text-in-1" style="color:#f0f1f2;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi elit, finibus
+          sit amet mi tincidunt, ornare efficitur lorem. Cras aliquet tellus ut dapibus
+          fringilla. Sed dictum nunc metus, non efficitur turpis pellentesque gravida.
+          Cras accumsan ultricies sem, id blandit justo dignissim eget. Pellentesque ut
+          metus feugiat, pharetra eros at, lobortis felis.</p>
+      </div>
+  <!--BUTTON 1-->
+  </div>
+  <div style="padding-bottom:120px;">
+  <div style="text-align:center; margin-top:30px;">
+  <button class="button_oscar" style="font-size:16px; font-weight:400; opacity:1;" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">GET IN TOUCH</button></p>
+  </div>
+  <!--div class="block block2">
+  </div-->
+  </div>
+  </div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+<div class="modal-dialog" role="document">
+  <div class="modal-content" >
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title" id="exampleModalLabel">Connect with Oscar</h4>
+    </div>
+    <div class="modal-body">
+      <form>
+
+        <div class="form-group">
+          <label for="recipient-name" class="control-label">Your Email Adress:</label>
+          <input type="text" class="form-control" id="recipient-name">
+        </div>
+
+        <div class="form-group">
+          <label for="message-text" class="control-label">Message:</label>
+          <textarea class="form-control" id="message-text"></textarea>
+        </div>
+
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary">Send message</button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!--Portfolio-->
+<div id="three" class="text-in-1"style="text-align:center; margin:0px 0px 150px 0px; padding-left:40px;">
+<div style="display: inline-block; margin:120px 0 50px 0px; text-align:center;">
+  <h1 class="h1-2" style="color:#313746;">Portfolio</h1>
+  <h2 class="text-in-1" style="color:#474E62;">A thing from the past</h1>
+    <!--div class="p-container-700">
+        <p class="text-in-1" style="color:#686F84;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi elit, finibus
+        sit amet mi tincidunt, ornare efficitur lorem. Cras aliquet tellus ut dapibus
+        fringilla. Sed dictum nunc metus, non efficitur turpis pellentesque gravida.
+        Cras accumsan ultricies sem, id blandit justo dignissim eget. Pellentesque ut
+        metus feugiat, pharetra eros at, lobortis felis.</p>
+    </div-->
+</div>
+<!--Portfolio container-->
+<div class="container">
+
+  <ul id="filters" class="clearfix" style="text-align:center;">
+    <li><span class="filter active" data-filter=".uxui, .app, .card, .icon, .logo, .web">All</span></li>
+    <li><span class="filter" data-filter=".uxui">UX / UI</span></li>
+    <li><span class="filter" data-filter=".app">App</span></li>
+    <li><span class="filter" data-filter=".card">Card</span></li>
+    <li><span class="filter" data-filter=".icon">Icon</span></li>
+    <li><span class="filter" data-filter=".logo">Logo</span></li>
+    <li><span class="filter" data-filter=".web">Web</span></li>
+  </ul>
+
+  <div id="portfoliolist">
+
+    <div class="portfolio logo" data-cat="logo">
+      <div class="portfolio-wrapper">
+        <img src="imgs/portfolios/logo/5.jpg" alt="" />
+        <div class="label">
+          <div class="label-text">
+            <a class="text-title">Bird Document</a>
+            <span class="text-category">Logo</span>
+          </div>
+          <div class="label-bg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio app" data-cat="app">
+      <div class="portfolio-wrapper">
+        <img src="imgs/portfolios/app/1.jpg" alt="" />
+        <div class="label">
+          <div class="label-text">
+            <a class="text-title">Visual Infography</a>
+            <span class="text-category">APP</span>
+          </div>
+          <div class="label-bg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio web" data-cat="web">
+      <div class="portfolio-wrapper">
+        <img src="imgs/portfolios/web/4.jpg" alt="" />
+        <div class="label">
+          <div class="label-text">
+            <a class="text-title">Sonor's Design</a>
+            <span class="text-category">Web design</span>
+          </div>
+          <div class="label-bg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio card" data-cat="card">
+      <div class="portfolio-wrapper">
+        <img src="imgs/portfolios/card/1.jpg" alt="" />
+        <div class="label">
+          <div class="label-text">
+            <a class="text-title">Typography Company</a>
+            <span class="text-category">Business card</span>
+          </div>
+          <div class="label-bg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio app" data-cat="app">
+      <div class="portfolio-wrapper">
+        <img src="imgs/portfolios/app/3.jpg" alt="" />
+        <div class="label">
+          <div class="label-text">
+            <a class="text-title">Weatherette</a>
+            <span class="text-category">APP</span>
+          </div>
+          <div class="label-bg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio card" data-cat="card">
+      <div class="portfolio-wrapper">
+        <img src="imgs/portfolios/card/4.jpg" alt="" />
+        <div class="label">
+          <div class="label-text">
+            <a class="text-title">BMF</a>
+            <span class="text-category">Business card</span>
+          </div>
+          <div class="label-bg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio card" data-cat="card">
+      <div class="portfolio-wrapper">
+        <img src="imgs/portfolios/card/5.jpg" alt="" />
+        <div class="label">
+          <div class="label-text">
+            <a class="text-title">Techlion</a>
+            <span class="text-category">Business card</span>
+          </div>
+          <div class="label-bg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio logo" data-cat="logo">
+      <div class="portfolio-wrapper">
+        <img src="imgs/portfolios/logo/1.jpg" alt="" />
+        <div class="label">
+          <div class="label-text">
+            <a class="text-title">KittyPic</a>
+            <span class="text-category">Logo</span>
+          </div>
+          <div class="label-bg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio app" data-cat="app">
+      <div class="portfolio-wrapper">
+        <img src="imgs/portfolios/app/2.jpg" alt="" />
+        <div class="label">
+          <div class="label-text">
+            <a class="text-title">Graph Plotting</a>
+            <span class="text-category">APP</span>
+          </div>
+          <div class="label-bg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio card" data-cat="card">
+      <div class="portfolio-wrapper">
+        <img src="imgs/portfolios/card/2.jpg" alt="" />
+        <div class="label">
+          <div class="label-text">
+            <a class="text-title">QR Quick Response</a>
+            <span class="text-category">Business card</span>
+          </div>
+          <div class="label-bg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio logo" data-cat="logo">
+      <div class="portfolio-wrapper">
+        <img src="imgs/portfolios/logo/6.jpg" alt="" />
+        <div class="label">
+          <div class="label-text">
+            <a class="text-title">Mobi Sock</a>
+            <span class="text-category">Logo</span>
+          </div>
+          <div class="label-bg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio logo" data-cat="logo">
+      <div class="portfolio-wrapper">
+        <img src="imgs/portfolios/logo/7.jpg" alt="" />
+        <div class="label">
+          <div class="label-text">
+            <a class="text-title">Village Community Church</a>
+            <span class="text-category">Logo</span>
+          </div>
+          <div class="label-bg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio icon" data-cat="icon">
+      <div class="portfolio-wrapper">
+        <img src="imgs/portfolios/icon/4.jpg" alt="" />
+        <div class="label">
+          <div class="label-text">
+            <a class="text-title">Domino's Pizza</a>
+            <span class="text-category">Icon</span>
+          </div>
+          <div class="label-bg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio web" data-cat="web">
+      <div class="portfolio-wrapper">
+        <img src="imgs/portfolios/web/3.jpg" alt="" />
+        <div class="label">
+          <div class="label-text">
+            <a class="text-title">Backend Admin</a>
+            <span class="text-category">Web design</span>
+          </div>
+          <div class="label-bg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio icon" data-cat="icon">
+      <div class="portfolio-wrapper">
+        <img src="imgs/portfolios/icon/1.jpg" alt="" />
+        <div class="label">
+          <div class="label-text">
+            <a class="text-title">Instagram</a>
+            <span class="text-category">Icon</span>
+          </div>
+          <div class="label-bg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio web" data-cat="web">
+      <div class="portfolio-wrapper">
+        <img src="imgs/portfolios/web/2.jpg" alt="" />
+        <div class="label">
+          <div class="label-text">
+            <a class="text-title">Student Guide</a>
+            <span class="text-category">Web design</span>
+          </div>
+          <div class="label-bg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio icon" data-cat="icon">
+      <div class="portfolio-wrapper">
+        <img src="imgs/portfolios/icon/2.jpg" alt="" />
+        <div class="label">
+          <div class="label-text">
+            <a class="text-title">Scoccer</a>
+            <span class="text-category">Icon</span>
+          </div>
+          <div class="label-bg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio icon" data-cat="icon">
+      <div class="portfolio-wrapper">
+        <img src="imgs/portfolios/icon/5.jpg" alt="" />
+        <div class="label">
+          <div class="label-text">
+            <a class="text-title">3D Map</a>
+            <span class="text-category">Icon</span>
+          </div>
+          <div class="label-bg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio web" data-cat="web">
+      <div class="portfolio-wrapper">
+        <img src="imgs/portfolios/web/1.jpg" alt="" />
+        <div class="label">
+          <div class="label-text">
+            <a class="text-title">Note</a>
+            <span class="text-category">Web design</span>
+          </div>
+          <div class="label-bg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio logo" data-cat="logo">
+      <div class="portfolio-wrapper">
+        <img src="imgs/portfolios/logo/3.jpg" alt="" />
+        <div class="label">
+          <div class="label-text">
+            <a class="text-title">Native Designers</a>
+            <span class="text-category">Logo</span>
+          </div>
+          <div class="label-bg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio logo" data-cat="logo">
+      <div class="portfolio-wrapper">
+        <img src="imgs/portfolios/logo/4.jpg" alt="" />
+        <div class="label">
+          <div class="label-text">
+            <a class="text-title">Bookworm</a>
+            <span class="text-category">Logo</span>
+          </div>
+          <div class="label-bg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio icon" data-cat="icon">
+      <div class="portfolio-wrapper">
+        <img src="imgs/portfolios/icon/3.jpg" alt="" />
+        <div class="label">
+          <div class="label-text">
+            <a class="text-title">Sandwich</a>
+            <span class="text-category">Icon</span>
+          </div>
+          <div class="label-bg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio card" data-cat="card">
+      <div class="portfolio-wrapper">
+        <img src="imgs/portfolios/card/3.jpg" alt="" />
+        <div class="label">
+          <div class="label-text">
+            <a class="text-title">Reality</a>
+            <span class="text-category">Business card</span>
+          </div>
+          <div class="label-bg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio logo" data-cat="logo">
+      <div class="portfolio-wrapper">
+        <img src="imgs/portfolios/logo/2.jpg" alt="" />
+        <div class="label">
+          <div class="label-text">
+            <a class="text-title">Speciallisterne</a>
+            <span class="text-category">Logo</span>
+          </div>
+          <div class="label-bg"></div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+</div><!-- container -->
+</div>
+
+<!--Education-->
+<div id="four" class="container-yellow"style="text-align:center; padding-left:40px;">
+<div style="display: inline-block; margin:150px 0 40px 0px; text-align:center;">
+  <h1 class="h1-2" style="color:#313746;">Education</h1>
+  <h2 class="text-in-1" style="color:#474E62;">Trust Me, I'm an engineer</h1>
+    <!--div class="p-container-700">
+        <p class="text-in-1" style="color:#686F84;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi elit, finibus
+        sit amet mi tincidunt, ornare efficitur lorem. Cras aliquet tellus ut dapibus
+        fringilla. Sed dictum nunc metus, non efficitur turpis pellentesque gravida.
+        Cras accumsan ultricies sem, id blandit justo dignissim eget. Pellentesque ut
+        metus feugiat, pharetra eros at, lobortis felis.</p>
+    </div-->
+</div>
+<!--Skills IMGs-->
+<div class="lidiv">
+  <ul style="text-align:center; color:#313746;" class="imgs2">
+    <li><img class="img-skill" style="max-width:120px; border-radius:50%;" src="https://dl.dropboxusercontent.com/s/u1lmel0yxdo3uy9/chalmers-200.png?dl=0"><h3>CHALMERS<br><i style="text-transform:lowercase; color:#555;">Gothenburg</i></h3><hr class="hr-one" style="border-bottom:1px solid #474E62; border-top:1px solid #474E62;"><p class="hr-two" style="text-align:center; margin-top:-10px; font-size:14px; padding: 0px 10px; color:#474E62; font-family:'open sans', sans-serif;"><b>B.Sc.</b> in <i>Industrial Design Engineering</i><br><b>M.Sc.</b> in <i>Management and Economics of Innovation</i></p></li>
+    <li><img class="img-skill" style="max-width:120px; border-radius:50%;" src="https://dl.dropboxusercontent.com/s/vn18612j149kul4/etseib-200.png?dl=0"><h3>ETSEIB<br><i style="text-transform:lowercase; color:#555;">Barcelona</i></h3><hr class="hr-one" style="border-bottom:1px solid #474E62; border-top:1px solid #474E62;"><p class="hr-two" style="text-align:center; margin-top:-10px; font-size:14px; padding: 0px 10px; color:#474E62; font-family:'open sans', sans-serif;"><b>Exchange Studies</b><br><i>Financial Management</i><br><i>Human Relation Management</i></p></li>
+    <li><img class="img-skill" style="max-width:120px; border-radius:50%;" src="https://dl.dropboxusercontent.com/s/b6z0a8gcmhz7f91/harvard-200.png?dl=0"><h3>HARVARD<br><i style="text-transform:lowercase; color:#555;">Cambridge</i></h3><hr class="hr-one" style="border-bottom:1px solid #474E62; border-top:1px solid #474E62;"><p class="hr-two" style="text-align:center; margin-top:-10px; font-size:14px; padding: 0px 10px; color:#474E62; font-family:'open sans', sans-serif;"><b>Exchange Studies</b><br><i>Corporate Governance</i></p></li>
+  </ul>
+</div>
+</div>
+
+
+<!--Contact Me 2-->
+<div id="five" style="text-align:center; padding-left:40px;">
+<div style="display: inline-block; margin:100px 0 30px 0px; text-align:center;">
+  <h1 class="h1-2" style="color:#313746;">Hey!</h1>
+  <h2 class="text-in-1" style="color:#474E62;">ready to make the call?</h1>
+    <div class="p-container-700">
+        <p class="text-in-1" style="color:#686F84;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi elit, finibus
+        sit amet mi tincidunt, ornare efficitur lorem. Cras aliquet tellus ut dapibus
+        fringilla. Sed dictum nunc metus, non efficitur turpis pellentesque gravida.
+        Cras accumsan ultricies sem, id blandit justo dignissim eget. Pellentesque ut
+        metus feugiat, pharetra eros at, lobortis felis.</p>
+    </div>
+<!--BUTTON 1-->
+</div>
+<div class="cube-content">
+<div style="text-align:center; margin-top:30px;">
+<button class="button_oscar2" style="font-size:16px; font-weight:400; opacity:1;" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">GET IN TOUCH</button></p>
+</div>
+<!--div class="block block2">
+</div-->
+</div>
+
+</div>
+</div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+<div class="modal-dialog" role="document">
+<div class="modal-content" >
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <label for="recipient-name" class="control-label">Recipient:</label>
+        <input type="text" class="form-control" id="recipient-name">
+      </div>
+      <div class="form-group">
+        <label for="message-text" class="control-label">Message:</label>
+        <textarea class="form-control" id="message-text"></textarea>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-primary">Send message</button>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--FOOTER-->
+<div class="container-grey" style="padding-top:30px; display:table; width:100%; text-align:center; padding-left:40px; border-top: 10px solid #111;">
+  <div style="display:table-box; width:60%; float:left; margin:0px 0 0px 50px; text-align:left;">
+      <div class="p-container-700" style="color:#f0f1f2;">
+          <h2 style="font-size:18px;">HELLO@OSCARLUND.COM</h2>
+          <h3 class="text-in-1" style="font-size:14px; color:#f0f1f2;">+46 730 30 82 59<br>Gothenburg  /  Sweden</h3>
+      </div>
+  </div>
+  <div style="display:table-box; width:30%; float:left; margin:0px 0 0px 50px; text-align:left;">
+      <div class="p-container-700" style="color:#f0f1f2;">
+          <h2 style="font-size:18px;">MY RESUMÉ</h2>
+          <h3 class="text-in-1" style="font-size:14px; color:#f0f1f2;">Get a PDF version of my CV.<br>View or download below.</h3>
+      </div>
+      <div style="padding-bottom:30px;">
+      <div style="text-align:left; margin-top:30px;">
+      <button class="button_oscar3" style="font-size:16px; font-weight:400; opacity:1;">VIEW PDF CV</button></p>
+      </div>
+  </div>
+</div>
+</div>
+<div class="container-grey" style="color:#777; padding-top:30px; text-align:center; padding-left:40px; padding-bottom:5px;">
+  <p style="text-align:center; font-size:14px; font-family:'open sans', sans-serif;">© 2016 Oscar Lund. Terms : Privacy</p></div>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
