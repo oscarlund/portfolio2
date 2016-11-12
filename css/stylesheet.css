@@ -1,5 +1,47 @@
 html {
 	-webkit-font-smoothing: antialiased;
+
+}
+
+body{
+		width: 100%;
+		border:0;
+		margin:0;
+}
+
+svg {
+  width:50%;
+}
+
+/*NEEEEEW*/
+  
+
+/*NEEEW EEEND*/
+
+
+
+
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
 
 /* ---------------------------------------------- /*
@@ -7,10 +49,10 @@ html {
 /* ---------------------------------------------- */
 h1 {
 	font-family: 'source serif pro', serif;
-	font-size: 75pt;
+	font-size: 48pt;
 	letter-spacing: -3pt;
 	font-weight: bold;
-	line-height: 75pt;
+	line-height: 48pt;
 	margin-bottom: 10pt;
 }
 
@@ -25,7 +67,7 @@ h1 {
 
 h2 {
 	font-family: 'open sans', sans-serif;
-	font-size: 22pt;
+	font-size: 18pt;
 	line-height: 25pt;
 	margin-bottom: 25pt;
 	letter-spacing: 4pt;
@@ -60,8 +102,16 @@ a {
  * CONTAINERS
 /* ---------------------------------------------- */
 .p-container-700{
-	max-width: 700px;
+	max-width: 500px;
 	margin:auto;
+}
+
+.container-white{
+    background: #f3f3f3; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#fbfbfb, #f3f3f3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fbfbfb, #f3f3f3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fbfbfb, #f3f3f3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fbfbfb, #f3f3f3); /* Standard syntax */
 }
 
 .container-blue {
@@ -357,6 +407,8 @@ a {
   -webkit-transform: translate3d(0, 0, 0);
 }
 
+
+
 .navbar-custom {
 	order-bottom: solid 1px #9B9B9B;
 	box-shadow: 0px 0px 2px #000;
@@ -368,7 +420,7 @@ a {
 
 .navbar-custom,
 .navbar-custom .dropdown-menu {
-	background: #313746;
+	background: #333;
 	padding: 0;
 }
 
@@ -415,6 +467,75 @@ a {
 	background: #f0f1f2;
 
 }
+.navbar  {
+	border: 0;
+	border-radius: 0;
+
+
+}
+.navbar a{
+	color:#fff;
+	font-size: 13px;
+	font-family: 'open sans', sans-serif;
+	letter-spacing: 2px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color:#fff;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+	color:#888;
+}
+
+.navbar-inverse .navbar-brand {
+	color:#fff;
+}
+
+.navbar-inverse .navbar-brand:hover {
+	color:#888;
+}
+
+.navbar .icon-bar{
+	height: 1px;
+}
+
+.middle-bar{
+	height: 1px;
+	opacity:0;
+}
+/*NEEEEEW*/
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+  width: 18px;
+  transition: all 0.2s;
+}
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+  opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
+}
 
 /* ---------------------------------------------- /*
  * ANIMATIONS
@@ -450,6 +571,21 @@ a {
   0% {opacity: 0; transform: scale(1) translateY(5px);}
   30% {opacity: 0.3; transform: scale(1.01) translateY(-1px);}
   100% {opacity: 1; transform: scale(1) translateY(0px);}
+}
+
+.text-in-2{
+  opacity: 0;
+  animation-name: text2;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 550ms;
+}
+
+@keyframes text2 {
+  0% {opacity: 0;}
+  30% {opacity: 0.3;}
+  100% {opacity: 1;}
 }
 
 /*
@@ -628,7 +764,7 @@ background: rgba(0, 0, 0, 0.2);
   width: 50px;
   height: 50px;
   position: relative;
-	margin:-160px auto 50px auto;
+	margin:0px auto 0px auto;
 }
 
 .arrow {
@@ -799,7 +935,7 @@ float:left;
 
 .lidiv{
   margin:0px auto;
-  width: 85%;
+  width: 65%;
   text-align:center;
 	display:block;
 }
@@ -809,6 +945,11 @@ float:left;
 
 
 @media screen and (max-width: 768px){
+	.navbar-nav li  {
+		margin:14vh auto;
+
+
+	}
 	.navbar-custom .dropdown:hover .dropdown-menu{
 	  display: block;
 	  margin-top:0;
@@ -876,7 +1017,7 @@ float:left;
 	/* ---------------------------------------------- */
 	.p-container-700{
 		max-width: 100%;
-		margin:auto 10%;
+		margin:auto 20%;
 	}
 
 }
