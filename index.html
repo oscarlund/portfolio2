@@ -4,28 +4,58 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="google-site-verification" content="oqNballUYE1sCwV-EDWFVFNZdvihstpf7yBWlWnEADY" />
 
       <title>Oscar Lund | Designer</title>
       <!--Bootstrap-->
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <link href="css/stylesheet.css" rel="stylesheet">
       <link href="css/layout.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/animate.css">
+
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/custom.js"></script>
     	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      <script src="js/typed.js"></script>
+      <script type="text/javascript">
+      $(function(){
+      $(".typeeffect").typed({
+        strings: ["Hello, my name is Oscar, <br /> I am a"],
+        startDelay: 3000,
+        typeSpeed: 100,
+        backDelay: 750,
+        backSpeed:30,
+        callback: function(){
+          shift();
+              }
+            });
+        });
 
-        ga('create', 'UA-87077201-1', 'auto');
-        ga('send', 'pageview');
-
+        function shift(){
+            $('.typed-cursor').hide();
+            $(".typeeffect2").typed({
+              strings: ["Designer.", "Musician.", "Ski-junkie.", "M.Sc. Engineer", "Business Owner."],
+              typeSpeed: 100,
+              backDelay: 1000,
+              backSpeed:30,
+              loop: true,
+            });
+        }
       </script>
+
+      <script type="text/javascript">
+      $(function(){
+      $(".typeeffect3").typed({
+        strings: ["My name is Oscar, and I make things. As a creative artist, I love to shape beauty. Both estethically, and functionally. Beautiful things are lovely, don't you agree? As design can be a big word, I like to refer to it as; the creation of products people want to interact with. For example, when I develop a website, I think of the development as; Creating a place where people want to spend time. Just like a living room, or a kitchen."],
+        startDelay: 2000,
+        typeSpeed: 30,
+        backDelay: 750,
+        backSpeed:30,
+            });
+        });
+
+          </script>
 
       <script type="text/javascript">
       $(function () {
@@ -90,57 +120,82 @@
         });
       </script>
 
+
       </head>
 
 
       <body id="bootstrap-overrides" style="position: relative;">
-      <!--NAVBAR-->
-      <nav class="navbar navbar-custom navbar-fixed-top">
-      <div class="container">
-        <button type="button" class="navbar-toggle"
-            data-toggle="collapse"
-            data-target=".navbar-collapse">
-          <span class="sr-only">Toogle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-          <a class="navbar-brand" href="#">OSCAR LUND</a>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#two" class="dropdown-toggle"
-              data-toggle="dropdown">SKILLS <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <!--li class="dropdown-header">Examples--><!--/li-->
-                    <li><a href="#two">UX / UI</a></li>
-                    <li><a href="#two">{DEV}</a></li>
-                    <li><a href="#two">LEADERSHIP</a></li>
-                    <li><a href="#two">BUSINESS STRATEGY</a></li>
-                    <li><a href="#two">DESIGN THINKING</a></li>
-                </ul>
-            </li>
-            <li class="active"><a href="#three">PORTFOLIO</a></li>
-            <li class="dropdown">
-              <a href="#four" class="dropdown-toggle"
-              data-toggle="dropdown">EDUCATION <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <!--li class="dropdown-header">Examples--><!--/li-->
-                    <li><a href="#four">CHALMERS</a></li>
-                    <li><a href="#four">ETSEIB</a></li>
-                    <li><a href="#four">HARVARD</a></li>
-                </ul>
-            </li>
-            <li><a href="#five">CONTACT</a></li>
 
-          </ul>
+      <div class="text-in-2" style="background:url(https://dl.dropboxusercontent.com/s/09je1evas5in206/firstpage-portfolio.jpg);
+      background-repeat:no-repeat; background-size:cover; background-position:center; background-color:#76c6d4;
+      text-align:center; height: 100%; width:100%; overflow:hidden;">
+
+        <!--div style="position:relative; top:50%; transform: translateY(-50%);"-->
+
+        <!--div>
+        <img  style="width:80%;" src="https://dl.dropboxusercontent.com/s/09je1evas5in206/firstpage-portfolio.jpg?dl=0">
+      </div-->
+
+        <div style="position:relative; top:75%; transform: translateY(-75%); color:#eee; font-family:'open sans', sans-serif; font-size:26px; " class="text-in-1">
+          <span style="font-weight:300; color:#eee;" class="typeeffect"></span>
+          <span style="font-weight:600; color:#ddd;" class="typeeffect2"></span>
+
         </div>
+
+        <div style="position:absolute; bottom:50px; right:50%; opacity:0.5;">
+        <div class="heart-content" style="position:absolute; margin-bottom:100px;">
+          <a href="#one"><div class="arrow arrow-down"><img style="width:20px;" src="https://dl.dropboxusercontent.com/s/k0nofv608vx3jst/arrow-down_200.png"></img></div> </a>
+          <div clas="heart heart1"></div>
+          <div clas="heart heart2"></div>
+          <div clas="heart heart3"></div>
+        </div>
+        </div>
+
+
+      <!--/div-->
       </div>
+
+
+
+      <!--NAVBAR-->
+      <nav id="one" class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button style="margin-top:5px;" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span style="opacity:0;" class="icon-bar middle-bar"></span>
+                    <span class="icon-bar top-bar"></span>
+                    <span style="opacity:0;" class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Company</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#two">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#three">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#four">Eduction</a>
+                    </li>
+                    <li>
+                        <a href="#five">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
     </nav>
       <!--NAVBAR END-->
 
       <!-- The overlay -->
-      <div id="myNav" class="overlay" style="z-index:999;">
+      <div id="myNav" class="overlay" style="z-index:999; display:none;">
         <!-- Button to close the overlay navigation -->
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
@@ -160,7 +215,7 @@
         </div>
       </div>
 
-      <div class="float-beat" id="image">
+      <div class="float-beat" id="image" style="display:none;">
         <div class="heart-content" style="margin-top:130%; margin-left:-17%;">
           <div class="heart2 heart4"></div>
           <div class="heart2 heart5"></div>
@@ -171,26 +226,28 @@
 <!--Everything below left-margin:40px;--->
 
       <!--Design + Strategy-->
-    <div class="text-in-1"style="text-align:center; padding-left:40px; width:100%;">
-      <div style="display: inline-block; margin:170px 0 220px 0px; text-align:center;">
+    <div id="one" class="container-white" style="text-align:center; padding-left:0px;">
+      <div style="display: inline-block; margin:120px 40px 130px 40px; text-align:center;">
         <h1 class="text-in-1" style="color:#313746;">Design <span style="font-size:50pt;">+</span> Strategy</h1>
         <h2 class="text-in-1" style="color:#474E62;">Oscar Lund</h1>
-          <div class="p-container-700">
-              <p class="text-in-1" style="color:#686F84;">My name is Oscar, and I make things. As a creative artist, I love to shape beauty. Both estethically, and functionally. <b>Beautiful things are lovely, don't you agree?</b>
+
+          <div class="p-container-700" class="wow bounceInUp">
+              <p style="color:#686F84;">My name is Oscar, and I make things. As a creative artist, I love to shape beauty. Both estethically, and functionally. <b>Beautiful things are lovely, don't you agree?</b>
               As design can be a big word, I like to refer to it as; <i>the creation of products people want to interact with.</i> For example, when I develop a website, I think of the development as; <i>Creating a place where people want to spend time.
               Just like a living room, or a kitchen.</i></p>
           </div>
+
       </div>
-      <div class="heart-content">
+      <!--div class="heart-content">
         <a href="#two"><div class="arrow arrow-down"><img style="width:30px;" src="https://dl.dropboxusercontent.com/s/k0nofv608vx3jst/arrow-down_200.png"></img></div> </a>
         <div class="heart heart1"></div>
         <div class="heart heart2"></div>
         <div class="heart heart3"></div>
       </div>
-    </div>
+    </div-->
 
     <!--Skills-->
-  <div id="two" class="container-blue"style="text-align:center; padding: 10px 0px 30px 40px; width:100%;">
+  <div id="two" class="container-blue"style="text-align:center; padding: 10px 0px 30px 0px;">
     <div style="display: inline-block; margin:135px 0 20px 0px; text-align:center;">
       <h1  class="h1-2" style="color:#f0f1f2;">Skills</h1>
       <h2 class="header2" style="color:#f0f1f2;">I KNOW A THING OR TWO ABOUT</h1>
@@ -215,7 +272,7 @@
 
 
   <!--Contact Me 1-->
-<div class="container-grey" style="text-align:center; padding-left:40px; width:100%;">
+<div class="container-grey" style="text-align:center; padding-left:0px;">
   <div style="display: inline-block; margin:130px 0 30px 0px; text-align:center;">
     <h1 class="h1-2" style="color:#f0f1f2;">Let's Connect.</h1>
     <h2 class="header2" style="color:#f0f1f2;">how may I help you?</h1>
@@ -270,7 +327,7 @@
 </div>
 
 <!--Portfolio-->
-<div id="three" class="text-in-1"style="text-align:center; margin:0px 0px 150px 0px; padding-left:40px; width:100%;">
+<div id="three" class="text-in-1"style="text-align:center; margin:0px 0px 150px 0px; padding-left:0px;">
 <div style="display: inline-block; margin:120px 0 0px 0px; text-align:center;">
   <h1 class="h1-2" style="color:#313746;">Portfolio</h1>
   <h2 class="header2" style="color:#474E62;">A thing from the past</h1>
@@ -616,7 +673,7 @@
 </div>
 
 <!--Education-->
-<div id="four" class="container-yellow"style="text-align:center; padding-left:40px; width:100%;">
+<div id="four" class="container-yellow"style="text-align:center; padding-left:0px;">
 <div style="display: inline-block; margin:150px 0 40px 0px; text-align:center;">
   <h1 class="h1-2" style="color:#313746;">Education</h1>
   <h2 class="header2" style="color:#474E62;">Trust Me, I'm an engineer</h1>
@@ -640,7 +697,7 @@
 
 
 <!--Contact Me 2-->
-<div id="five" style="text-align:center; padding-left:40px; width:100%;">
+<div id="five" style="text-align:center; padding-left:0px;">
 <div style="display: inline-block; margin:100px 0 30px 0px; text-align:center;">
   <h1 class="h1-2" style="color:#313746;">Hey!</h1>
   <h2 class="header2" style="color:#474E62;">ready to make the call?</h1>
@@ -693,10 +750,10 @@
 </div>
 
 <!--FOOTER-->
-<div class="container-grey" style="overflow:hidden; padding-top:30px; display:table; width:100%; text-align:center; padding-left:40px; border-top: 10px solid #111;">
+<div class="container-grey" style="padding-top:30px; display:table; width:100%; text-align:center; padding-left:40px; border-top: 10px solid #111;">
   <div style="display:table-box; width:60%; float:left; margin:0px 0 0px 50px; text-align:left;">
       <div class="p-container-700" style="color:#f0f1f2;">
-          <h2 style="font-size:18px;"><b>HELLO@</b></h2>
+          <h2 style="font-size:18px;"><b>HELLO@OSCARLUND.COM</b></h2>
           <h3 class="text-in-1" style="font-size:14px; color:#f0f1f2;">+46 730 30 82 59<br>Gothenburg  /  Sweden</h3>
       </div>
   </div>
@@ -705,7 +762,11 @@
           <h2 style="font-size:18px;"><b>MY RESUMÉ</b></h2>
           <h3 class="text-in-1" style="font-size:14px; color:#f0f1f2;">Get a PDF version of my CV.<br>View or download below.</h3>
       </div>
-      <!--INSERT HERE-->
+      <div style="padding-bottom:30px;">
+      <div style="text-align:left; margin-top:30px;">
+      <button class="button_oscar3" style="font-size:16px; font-weight:400; opacity:1;">VIEW PDF CV</button></p>
+      </div>
+  </div>
 </div>
 </div>
 <div class="container-grey" style="color:#777; padding-top:30px; text-align:center; padding-left:40px; padding-bottom:5px;">
