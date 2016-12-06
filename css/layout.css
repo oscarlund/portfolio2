@@ -210,6 +210,11 @@ html, body {
     bottom:-10px;
 
   }
+
+  #portfoliolist .portfolio {
+		width:48%;
+		margin:1%;
+	}
 }
 
 
@@ -220,8 +225,8 @@ html, body {
 	}
 
 	#portfoliolist .portfolio {
-		width:48%;
-		margin:1%;
+		width:90%;
+		margin:5%;
 	}
 
 	#ads {
