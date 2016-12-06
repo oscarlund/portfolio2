@@ -220,6 +220,18 @@ a {
 		font-family: 'open sans', sans-serif;
 }
 
+/* ---------------------------------------------- /*
+ * WRITE ON
+/* ---------------------------------------------- */
+.write-on-text{
+	top:77%;
+	transform: translateY(-77%);
+}
+
+
+/* ---------------------------------------------- /*
+ * BTN:s
+/* ---------------------------------------------- */
 .btn {
 	-webkit-border-radius: 0;
      -moz-border-radius: 0;
@@ -1250,5 +1262,26 @@ and (max-device-width : 568px)
 and (orientation : landscape) {
 	.arrow-down-container{
 		bottom:5px;
+	}
+	/* ---------------------------------------------- /*
+	 * WRITE ON
+	/* ---------------------------------------------- */
+	.write-on-text{
+		top:73%;
+		transform: translateY(-73%);
+	}
+
+	h2 {
+		font-family: 'merriweather', serif;
+		font-size: 12pt;
+		line-height: 20pt;
+		margin-bottom: 5pt;
+		margin-left: 10px;
+		margin-right: 10px;
+		letter-spacing: 0pt;
+		color:#333;
+	}
+	.img-skill {
+		width: 75px;
 	}
 }
