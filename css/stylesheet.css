@@ -1246,12 +1246,12 @@ a {
 
 
 
-@media screen and (max-width:500px){
+@media screen and (max-width:568px){
 .img-skill {
 		width: 76px;
 	}
 	.arrow-down-container{
-		bottom:5px;
+		visibility: hidden;
 	}
 	/* ---------------------------------------------- /*
 	 * WRITE ON
