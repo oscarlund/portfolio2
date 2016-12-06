@@ -1250,16 +1250,6 @@ a {
 .img-skill {
 		width: 76px;
 	}
-}
-.write-on {
-	font-size: 12pt;
-}
-
-/*Iphone 5 and 5s*/
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 568px)
-and (orientation : landscape) {
 	.arrow-down-container{
 		bottom:5px;
 	}
@@ -1283,5 +1273,8 @@ and (orientation : landscape) {
 	}
 	.img-skill {
 		width: 75px;
+	}
+	.write-on {
+		font-size: 12pt;
 	}
 }
