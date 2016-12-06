@@ -1152,7 +1152,7 @@ float:left;
   .imgs li {
     width:50%;
   }
-}
+
 
 h1 {
 	font-family: 'merriweather', serif;
@@ -1242,13 +1242,18 @@ a {
 
 }
 
+}
 
 
 
 
 @media screen and (max-width:568px){
-.img-skill {
-		width: 76px;
+.socialmedia img {
+		width: 65px;
+		padding: 0 5px;
+	}
+	.img-skill2 {
+		width: 60px;
 	}
 	.arrow-down-container{
 		visibility: hidden;
@@ -1257,8 +1262,8 @@ a {
 	 * WRITE ON
 	/* ---------------------------------------------- */
 	.write-on-text{
-		top:73%;
-		transform: translateY(-73%);
+		top:77%;
+		transform: translateY(-77%);
 	}
 
 	h2 {
@@ -1266,11 +1271,20 @@ a {
 		font-size: 12pt;
 		line-height: 20pt;
 		margin-bottom: 5pt;
-		margin-left: 10px;
-		margin-right: 10px;
+		margin-left: 5%;
+		margin-right: 5%;
 		letter-spacing: 0pt;
 		color:#333;
 	}
+
+	p {
+		font-family: 'open sans', sans-serif;
+		font-size: 7pt;
+		text-align:center;
+		line-height: 20pt;
+		font-weight:300;
+	}
+
 	.img-skill {
 		width: 75px;
 	}
