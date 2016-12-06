@@ -224,10 +224,12 @@ a {
  * WRITE ON
 /* ---------------------------------------------- */
 .write-on-text{
-	top:77%;
-	transform: translateY(-77%);
+	top:82%;
+	transform: translateY(-82%);
 }
-
+.design-text{
+	padding:130px 75px 130px 75px;
+}
 
 /* ---------------------------------------------- /*
  * BTN:s
@@ -1242,6 +1244,10 @@ a {
 
 }
 
+.design-text{
+	padding:75px 75px 75px 75px;
+}
+
 }
 
 
@@ -1262,8 +1268,8 @@ a {
 	 * WRITE ON
 	/* ---------------------------------------------- */
 	.write-on-text{
-		top:77%;
-		transform: translateY(-77%);
+		top:85%;
+		transform: translateY(-85%);
 	}
 
 	h2 {
