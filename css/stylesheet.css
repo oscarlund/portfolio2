@@ -165,6 +165,9 @@ a {
 	text-align:center;
 }
 
+.arrow-down-container{
+	bottom:20px;
+}
 
 .container-white{
     background: #f3f3f3; /* For browsers that do not support gradients */
@@ -1232,11 +1235,20 @@ a {
 
 
 @media screen and (max-width:500px){
-
-	.img-skill {
+.img-skill {
 		width: 76px;
 	}
 }
 .write-on {
 	font-size: 12pt;
+}
+
+/*Iphone 5 and 5s*/
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+	.arrow-down-container{
+		bottom:5px;
+	}
 }
