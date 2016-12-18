@@ -138,17 +138,10 @@
         });
     });
     </script>
-  <!--Google Analytics-->
+
     <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-87077201-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    $(document).foundation('topbar', {scrolltop: false});
+    </script>
   </head>
 
 
@@ -176,7 +169,7 @@
 <!--TOP Gif END-->
 
 <!--NAVBAR-->
-      <nav id="one" class="navbar navbar-inverse" role="navigation">
+      <nav id="one" class="navbar navbar-inverse navbar-static-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -224,9 +217,11 @@
           <h2 class"text-in-1" style="">Oscar Lund. Freelance Designer.</h2>
           <p class="h3top" >Sharp, value adding design for web & print.</p>
         <div>
+          <a target="_blank" rel="noreferrer" href="benify2.html">
             <div style="text-align:center; margin-top:50px;">
-            <button class="button_black" style="font-size:12px; font-weight:400; opacity:1;">This is Why You Need a Designer.</button></p>
+            <button class="button_black" style="font-size:12px; font-weight:400; opacity:1;">This is Why You Need a Designer.<img class="bounce-hover" src="imgs/arrow-right-eee.svg"></button></p>
             </div>
+          </a>
         </div>
       </div>
     </div>
@@ -301,16 +296,19 @@
       <div id="portfoliolist">
 
         <div class="portfolio web" data-cat="web">
+
           <div class="portfolio-wrapper">
+          <a data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
             <img src="imgs/portfolios/web/transaction_email1.jpg" alt="" />
             <div class="label">
-              <div class="label-text">
-                <a class="text-title">Transaction Email Designs</a>
+              <div style="margin-left:-3px;" class="label-text">
+                <a class="text-title" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Transaction Email Designs</a>
                 <span class="text-category">Ace-Up Inc.</span>
               </div>
               <div class="label-bg"></div>
             </div>
           </div>
+        </a>
         </div>
 
         <div class="portfolio web" data-cat="web">
@@ -318,7 +316,7 @@
             <img src="imgs/portfolios/web/homepage_aceup1.jpg" alt="" />
             <div class="label">
               <div class="label-text">
-                <a class="text-title">Home Page Design</a>
+                <a data-toggle="modal" data-target="#AUHomepage" data-whatever="@mdo" class="text-title">Home Page Design</a>
                 <span class="text-category">Ace-Up Inc.</span>
               </div>
               <div class="label-bg"></div>
@@ -431,32 +429,220 @@
         </div>
 
         <div class="portfolio video" data-cat="video">
+          <a class="text-title" data-toggle="modal" data-target="#VCMovieModal" data-whatever="@mdo">
           <div class="portfolio-wrapper">
             <img src="imgs/portfolios/video/venturecup4.jpg" alt="" />
             <div class="label">
-              <div class="label-text">
-                <a class="text-title">Animation Video</a>
+              <div style="margin-left:-3px;" class="label-text">
+                <a class="text-title" data-toggle="modal" data-target="#VCMovieModal" data-whatever="@mdo">Introduction Movie</a>
                 <span class="text-category">Venture Cup</span>
               </div>
               <div class="label-bg"></div>
             </div>
           </div>
+        </a>
         </div>
 
 
         <div class="portfolio web" data-cat="web">
-          <div class="portfolio-wrapper">
+          <a class="text-title" data-toggle="modal" data-target="#wagaconcept" data-whatever="@mdo">
+            <div class="portfolio-wrapper">
             <img src="imgs/portfolios/web/waga_pic_thumb.jpg" alt="" />
             <div class="label">
-              <div class="label-text">
-                <a class="text-title">Fashion Project</a>
+              <div style="margin-left:-3px;" class="label-text">
+                <a class="text-title" data-toggle="modal" data-target="#wagaconcept" data-whatever="@mdo">Fashion Project</a>
                 <span class="text-category">WÅGA</span>
               </div>
               <div class="label-bg"></div>
             </div>
           </div>
+        </a>
         </div>
       </div>
+      <!--List end-->
+      <!--MODAL1-->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" >
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="exampleModalLabel">Transaction Email Layout</h4>
+          </div>
+          <div class="modal-body">
+            <form action="mailto:olund90@gmail.com" method="post" enctype="text/plain">
+              <img style="border-radius:5px; width:100%; max-width:400px;" src="imgs/portfolios/web/transaction_email1.jpg" alt="" />
+
+
+              <!--div class="form-group">
+                <label for="recipient-name" class="control-label">Your Email Adress:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+
+              <div class="form-group">
+                <label for="message-text" class="control-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div-->
+            <!--TEXT Transaction Emails-->
+            <div class="modal-text-container">
+            <p>
+              I made the sketches, wireframes, and final design of all transaction emails for the coaching platform, <a target="_blank" rel="noreferrer" href="http://www.ace-up.com">Ace-up.com</a>. The process involved pencil skeching and <a target="_blank" rel="noreferrer" href="https://www.aketchapp.com">Sketch</a>.
+
+              <br><br><b>Tools in use:</b><br>
+              <img style="width:50px; margin:0; padding:0;" src="imgs/app-icon-sketch.png">
+            </p>
+            </div>
+            <!--TEXT Transaction Emails END-->
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <!--button type="button" class="btn btn-primary">Send message</button-->
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <!--MODAL1 End-->
+
+      <!--MODAL VC Movie-->
+      <div class="modal fade" id="VCMovieModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" >
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="exampleModalLabel">Introduction Movie - Venture Cup</h4>
+          </div>
+          <div class="modal-body">
+            <form action="mailto:olund90@gmail.com" method="post" enctype="text/plain">
+              <iframe width="97%" height="320" src="https://www.youtube.com/embed/UReieqpY1x0?autoplay=1" frameborder="0" allowfullscreen></iframe>
+
+
+              <!--div class="form-group">
+                <label for="recipient-name" class="control-label">Your Email Adress:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+
+              <div class="form-group">
+                <label for="message-text" class="control-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div-->
+
+              <!--TEXT Transaction Emails-->
+              <div class="modal-text-container">
+              <p>
+                I made the concept, sketches, final design, animation, and retouch of the regional final of <a target="_blank" rel="noreferrer" href="http://www.venturecup.se">Venture Cup</a> 2015 and 2016.
+
+                <br><br><b>Tools in use:</b><br>
+                <img style="width:50px; margin:0; padding:0;" src="imgs/icons/adobeicons/ps_appicon.png">
+                <img style="width:50px; margin:0; padding:0;" src="imgs/icons/adobeicons/ai_appicon.png">
+                <img style="width:50px; margin:0; padding:0;" src="imgs/icons/adobeicons/ae_appicon.png">
+              </p>
+              </div>
+              <!--TEXT Transaction Emails END-->
+
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <!--button type="button" class="btn btn-primary">Send message</button-->
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <!--MODAL VC Movie End-->
+
+      <!--waga concept-->
+      <div style="text-align:center;" class="modal fade" id="wagaconcept" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" >
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="exampleModalLabel">Transaction Email Layout</h4>
+          </div>
+          <div class="modal-body">
+            <form action="mailto:olund90@gmail.com" method="post" enctype="text/plain">
+              <img style="border-radius:27px; width:100%; max-width:400px;" src="imgs/waga_loop.gif" alt="" />
+
+
+              <!--div class="form-group">
+                <label for="recipient-name" class="control-label">Your Email Adress:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+
+              <div class="form-group">
+                <label for="message-text" class="control-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div-->
+            <!--TEXT Transaction Emails-->
+            <div class="modal-text-container">
+            <p>
+              I made the sketches, wireframes, and final design of all transaction emails for the coaching platform, <a target="_blank" rel="noreferrer" href="http://www.ace-up.com">Ace-up.com</a>. The process involved pencil skeching and <a target="_blank" rel="noreferrer" href="https://www.aketchapp.com">Sketch</a>.
+
+              <br><br><b>Tools in use:</b><br>
+              <img style="width:50px; margin:0; padding:0;" src="imgs/app-icon-sketch.png">
+            </p>
+            </div>
+            <!--TEXT Transaction Emails END-->
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <!--button type="button" class="btn btn-primary">Send message</button-->
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <!--waga concept End-->
+
+      <!--MODAL Ace-up Home Page-->
+      <div class="modal fade" id="AUHomepage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" >
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="exampleModalLabel">Introduction Movie - Venture Cup</h4>
+          </div>
+          <div class="modal-body">
+            <form action="mailto:olund90@gmail.com" method="post" enctype="text/plain">
+              <iframe width="97%" height="320" src="https://www.youtube.com/embed/UReieqpY1x0" frameborder="0" allowfullscreen></iframe>
+
+
+              <!--div class="form-group">
+                <label for="recipient-name" class="control-label">Your Email Adress:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+
+              <div class="form-group">
+                <label for="message-text" class="control-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div-->
+
+              <!--TEXT Transaction Emails-->
+              <div class="modal-text-container">
+              <p>
+                I made the concept, sketches, final design, animation, and retouch of the regional final of <a target="_blank" rel="noreferrer" href="http://www.venturecup.se">Venture Cup</a> 2015 and 2016.
+
+                <br><br><b>Tools in use:</b><br>
+                <img style="width:50px; margin:0; padding:0;" src="imgs/icons/adobeicons/ps_appicon.png">
+                <img style="width:50px; margin:0; padding:0;" src="imgs/icons/adobeicons/ai_appicon.png">
+                <img style="width:50px; margin:0; padding:0;" src="imgs/icons/adobeicons/ae_appicon.png">
+              </p>
+              </div>
+              <!--TEXT Transaction Emails END-->
+
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <!--button type="button" class="btn btn-primary">Send message</button-->
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <!--MODAL Ace-up Home Page End-->
 
     </div>
     <!-- container-END-->
@@ -470,6 +656,7 @@
     <h2 class"text-in-1" style="color:#fff;">I can help you reach your design goals!</h2>
     <p class="h3top"style="color:#fff;">Contact, strategize and design.</p>
     </div>
+
   <!--Social media icons-->
     <div class="socialmedia">
       <a target="blank" rel="noopener noreferrer" href="https://www.facebook.com/oscarlund01"><img class="img-skill" src="imgs/social_media/svg/facebook.svg"></a>
@@ -492,9 +679,9 @@
     <!--Skills IMGs-->
     <div class="lidiv">
       <ul style="text-align:center; color:#313746;" class="imgs2">
-        <li><img class="img-skill2" style="border-radius:50%; box-shadow:0px 1px 5px #ccc;" src="imgs/chalmers_ico2.png"><h3>CHALMERS<br><p style="text-transform:uppercase; color:#555;">Gothenburg</p></h3></li>
-        <li><img class="img-skill2" style="border-radius:50%; box-shadow:0px 1px 5px #ccc;" src="imgs/upc_ico.png"><h3>ETSEIB<br><p style="text-transform:uppercase; color:#555;">Barcelona</p></h3></li>
-        <li><img class="img-skill2" style="border-radius:50%; box-shadow:0px 1px 5px #ccc;" src="imgs/harvard_ico2.png"><h3>HARVARD<br><p style="text-transform:uppercase; color:#555;">Cambridge</p></h3></li>
+        <a style="color:#555;" target="_blank" rel="noreferrer" href="http://www.chalmers.se"><li><img class="img-skill2" style="border-radius:50%; box-shadow:0px 1px 5px #ccc;" src="imgs/chalmers_ico2.png"><h3>CHALMERS<br><p style="text-transform:uppercase; color:#555;">Gothenburg</p></h3></li></a>
+        <a style="color:#555;" target="_blank" rel="noreferrer" href="http://www.etseib.upc.edu"><li><img class="img-skill2" style="border-radius:50%; box-shadow:0px 1px 5px #ccc;" src="imgs/upc_ico.png"><h3>ETSEIB<br><p style="text-transform:uppercase; color:#555;">Barcelona</p></h3></li></a>
+        <a style="color:#555;" target="_blank" rel="noreferrer" href="http://www.harvard.edu"><li><img class="img-skill2" style="border-radius:50%; box-shadow:0px 1px 5px #ccc;" src="imgs/harvard_ico2.png"><h3>HARVARD<br><p style="text-transform:uppercase; color:#555;">Cambridge</p></h3></li></a>
       </ul>
     </div>
   </div>
@@ -504,14 +691,14 @@
       <!--PUT ARROW UP-->
             <div style="position:absolue; bottom:45px; width:100%;">
             <div class="heart-conten">
-              <a href="#zero"><div class="arrow arrow-down"><img style="width:20px; transform: rotate(180deg);" src="imgs/arrow-down_200.png"></img></div> </a>
+              <a href="#one"><div class="arrow arrow-down"><img style="width:20px; transform: rotate(180deg);" src="imgs/arrow-down_200.png"></img></div> </a>
             </div>
             </div>
         <!--PUT ARROW UP END-->
       <div style="display:table-box; width:60%; float:left; padding:0px 0 0px 40px; text-align:left;">
           <div class="p-container-700" style="color:#f0f1f2;">
-              <h3><b>HELLO@OSCARLUND.COM</b></h3>
-              <h4 class="text-in-1" style="font-size:14px; color:#f0f1f2;">+46 730 30 82 59<br>Gothenburg  /  Sweden</h4>
+              <a href="mailto:hello@oscarlund.com"><h3><b>HELLO@OSCARLUND.COM</b></h3></a>
+              <h4 class="text-in-" style="font-size:14px; color:#f0f1f2;"><a href="tel:0046730308259">+46 730 30 82 59</a><br>Gothenburg  /  Sweden</h4>
           </div>
       </div>
       <div style="display:table-box; width:30%; float:left; margin:0px 0 0px 0px; text-align:left;">
@@ -533,5 +720,7 @@
 
       <p style="font-size:12px; font-family:'open sans', sans-serif;">© 2016 Oscar Lund.<br>Terms : Privacy</p>
     </div>
+
+
   </body>
 </html>
