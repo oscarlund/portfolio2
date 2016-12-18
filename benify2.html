@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name = "viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1.0">
+      <meta name="author" content="oscarlund">
+
+      <title>Design Process - Benify</title>
+      <!--Bootstrap-->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/stylesheet.css" rel="stylesheet">
+      <link href="css/layout.css" rel="stylesheet">
+      <link href="css/animate.css" rel="stylesheet">
+      <link rel="icon" type="image/png" href="/imgs/fav1.png" />
+      <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900" rel="stylesheet">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="js/wow.min.js"></script>
+    	<script src="js/jquery.mixitup.min.js"></script>
+      <script src="js/typed.js"></script>
+
+      <script type="text/javascript">
+      $(function(){
+      $(".typeeffect").typed({
+        strings: ["Hello, my name is Oscar, <br /> I am a"],
+        startDelay: 3000,
+        typeSpeed: 100,
+        backDelay: 750,
+        backSpeed:30,
+        callback: function(){
+          shift();
+              }
+            });
+        });
+
+        function shift(){
+            $('.typed-cursor').hide();
+            $(".typeeffect2").typed({
+              strings: ["Designer.", "Musician.", "Ski-junkie.", "M.Sc. Engineer", "Business Owner."],
+              typeSpeed: 100,
+              backDelay: 1000,
+              backSpeed:30,
+              loop: true,
+            });
+        }
+      </script>
+
+      <script type="text/javascript">
+      $(function () {
+    		var filterList = {
+    			init: function () {
+    				// MixItUp plugin
+    				// http://mixitup.io
+    				$('#portfoliolist').mixItUp({
+      				selectors: {
+        			  target: '.portfolio',
+        			  filter: '.filter'
+        		  },
+        		  load: {
+          		  filter: '.app, .graphic, .logo, .product, .video, .web'
+          		}
+    				});
+    			}
+    		};
+    		// Run the show!
+    		filterList.init();
+    	});
+    	</script>
+
+      <!--Scroll-->
+      <script type="text/javascript">
+      $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+            }
+          }
+        });
+      });
+      </script>
+
+      <script>
+        /* Open when someone clicks on the span element */
+        function openNav() {
+            document.getElementById("myNav").style.width = "300px";
+        }
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+            document.getElementById("myNav").style.width = "40px";
+        }
+    </script>
+
+        <script>
+        $(document).ready( function(){
+          $('#target').click( function() {
+              var toggleWidth = $("#myNav").width() == 300 ? "40px" : "300px";
+              $('#myNav').animate({ width: toggleWidth }, 200, 'swing');
+          });
+        });
+      </script>
+
+      <script>
+      new WOW().init();
+      </script>
+
+      <script>
+      $(function() {
+          $('.nav a').on('click', function(){
+              if($('.navbar-toggle').css('display') !='none'){
+                  $(".navbar-toggle").trigger( "click" );
+              }
+          });
+      });
+    </script>
+
+<!--HIDE NAV ON LI CLICK-->
+    <script>
+    $('#navbar').navbar().on('shown', function(){
+        $('body').css('overflow', 'hidden');
+    }).on('hidden', function(){
+        $('body').css('overflow', 'auto');
+    })
+    </script>
+
+<!--NO SCROLL NAVBAR-->
+    <script>
+    $( document ).ready(function() {
+        $('.navbar-toggle collapsed').click(function() {
+           $('body').addClass('overflowhidden')
+        });
+    });
+    </script>
+
+    <script>
+    $(document).foundation('topbar', {scrolltop: false});
+    </script>
+  </head>
+
+
+  <body id="zero" style="position: relative;">
+
+<!--Top Benify-->
+<div style=" background-color:#8ea1af; padding-bottom:200px;">
+<!--img src="imgs/timeline-background.png" style="position:absolute; width:40%; margin-left:18%; margin-top:30vh;"-->
+  <div style="text-align:center;">
+    <img src="imgs/design-process-loop.gif" style="width:130%; max-width:1000px; height:auto;">
+  </div>
+  <div style="text-align:center;">
+    <h3 style="opacity:0.5; font-size:80%;"></h3>
+    <!--h4 style="margin-top:-35px;">Design Strategy</h4-->
+  </div>
+
+  <!--TEST 1-->
+
+    <div class="container" style="display:table; width:100%; margin-top:50px; padding:0;">
+      <!--Row 1-->
+      <div class="row">
+        <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+          <div class="row">
+            <!--div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <h4 style="padding-left:50%; padding-top:50px;">Ideate</h4>
+            </div-->
+            <div style="text-align:center;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <img src="imgs/process1-2.png" style="width:100%; max-width:300px;">
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center;" class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+          <a style="cursor:pointer;" data-toggle="modal" data-target="#WF-1" data-whatever="@mdo">
+            <img src="imgs/WF1-2.png" style="width:90%; max-width:300px;">
+          </a>
+        </div>
+      </div>
+      <!--Row 2-->
+      <div class="row">
+        <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+          <div class="row">
+            <!--div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <h4 style="padding-left:50%; padding-top:50px;">Ideate</h4>
+            </div-->
+            <div style="text-align:center;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <img src="imgs/process2-2.png" style="width:100%; max-width:300px;">
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center;" class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+          <a style="cursor:pointer;" data-toggle="modal" data-target="#WF-2" data-whatever="@mdo">
+            <img src="imgs/WF2-2.png" style="width:90%; max-width:300px;">
+          </a>
+        </div>
+      </div>
+      <!--Row 3-->
+      <div class="row">
+        <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+          <div class="row">
+            <!--div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <h4 style="padding-left:50%; padding-top:50px;">Ideate</h4>
+            </div-->
+            <div style="text-align:center;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <img src="imgs/process3-2.png" style="width:100%; max-width:300px;">
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center;" class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+          <a style="cursor:pointer;" data-toggle="modal" data-target="#WF-3" data-whatever="@mdo">
+            <img src="imgs/WF3-2.png" style="width:90%; max-width:300px;">
+          </a>
+        </div>
+      </div>
+      <!--Row 4-->
+      <div class="row">
+        <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+          <div class="row">
+            <!--div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <h4 style="padding-left:50%; padding-top:50px;">Ideate</h4>
+            </div-->
+            <div style="text-align:center;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <img src="imgs/process4-4.png" style="width:100%; max-width:300px;">
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center;" class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+          <a style="cursor:pointer;" data-toggle="modal" data-target="#WF-4" data-whatever="@mdo">
+            <img src="imgs/WF4-2.png" style="width:90%; max-width:300px;">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--MODAL - WF1-->
+  <div class="modal fade" id="WF-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" >
+      <div style="text-align:center;"class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Wireframe Sketches</h4>
+      </div>
+      <div style="text-align:center; margin-top:20px;" class="modal-body">
+        <form action="mailto:olund90@gmail.com" method="post" enctype="text/plain">
+          <img style="border-radius:5px; width:100%; max-width:500px;" src="imgs/WF1.png" alt="" />
+        <!--TEXT Transaction Emails-->
+        <div class="modal-text-container">
+        <p style="font-size:13px;">
+          Paper, pencil drawings. Fast sketching to cheaply and effectively brainstorm and go through a lot of layout ideas.
+          <br><br><b>Tools in use:</b><br>
+          <img style="width:30%; margin:0; padding:0;" src="imgs/process1.png">
+        </p>
+        </div>
+        <!--TEXT Transaction Emails END-->
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <!--button type="button" class="btn btn-primary">Send message</button-->
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <!--MODAL WF1 End-->
+
+  <!--MODAL - WF2-->
+  <div class="modal fade" id="WF-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div style="text-align:center;"class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Low Fidelity Digital Mockups</h4>
+      </div>
+      <div style="text-align:center; margin-top:20px;" class="modal-body">
+        <form action="mailto:olund90@gmail.com" method="post" enctype="text/plain">
+          <img style="border-radius:5px; width:100%; max-width:500px;" src="imgs/WF2.png" alt="" />
+        <!--TEXT Transaction Emails-->
+        <div class="modal-text-container">
+        <p style="font-size:13px;">
+          Creating digital wireframes in low fidelity, to test layouts, user flows and call to actions.
+          <br><br><b>Tools in use:</b><br>
+          <img style="width:30%; margin:0; padding:0;" src="imgs/process2.png">
+        </p>
+        </div>
+        <!--TEXT Transaction Emails END-->
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <!--button type="button" class="btn btn-primary">Send message</button-->
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <!--MODAL WF2 End-->
+
+    <!--MODAL - WF3-->
+    <div class="modal fade" id="WF-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div style="text-align:center;"class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="exampleModalLabel">High Fidelity Digital Prototypes</h4>
+        </div>
+        <div style="text-align:center; margin-top:20px;" class="modal-body">
+          <form action="mailto:olund90@gmail.com" method="post" enctype="text/plain">
+            <img style="border-radius:5px; width:100%; max-width:500px;" src="imgs/WF3.png" alt="" />
+          <!--TEXT Transaction Emails-->
+          <div class="modal-text-container">
+          <p style="font-size:13px;">
+            High fidelity mockups and prototypes. Coding HTML-versions, and test code.
+            <br><br><b>Tools in use:</b><br>
+            <img style="width:30%; margin:0; padding:0;" src="imgs/process3.png">
+          </p>
+          </div>
+          <!--TEXT Transaction Emails END-->
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <!--button type="button" class="btn btn-primary">Send message</button-->
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!--MODAL WF3 End-->
+
+      <!--MODAL - WF4-->
+      <div class="modal fade" id="WF-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div style="text-align:center;"class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="exampleModalLabel">Analytics</h4>
+          </div>
+          <div style="text-align:center; margin-top:20px;" class="modal-body">
+            <form action="mailto:olund90@gmail.com" method="post" enctype="text/plain">
+              <img style="border-radius:5px; width:100%; max-width:500px;" src="imgs/WF4.png" alt="" />
+            <!--TEXT Transaction Emails-->
+            <div class="modal-text-container">
+            <p style="font-size:13px;">
+              Analyze performance and reiterate.
+              <br><br><b>Tools in use:</b><br>
+              <img style="width:30%; margin:0; padding:0;" src="imgs/process4.png">
+            </p>
+            </div>
+            <!--TEXT Transaction Emails END-->
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <!--button type="button" class="btn btn-primary">Send message</button-->
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <!--MODAL WF4 End-->
+
+  </body>
+</html>
