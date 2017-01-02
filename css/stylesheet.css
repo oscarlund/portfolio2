@@ -1340,6 +1340,28 @@ a {
 		font-weight:300;
 	}
 
+	.h3top {
+		font-family: 'merriweather', serif;
+		font-size: 10pt;
+		line-height: 15pt;
+		margin-bottom: 15pt;
+		letter-spacing: 0pt;
+		color:#333;
+		font-weight:300;
+		padding:10px 5%;
+	}
+
+	.design-text{
+		padding:75px 40px 75px 40px;
+
+	}
+
+	.button_black {
+
+	  padding: 15px 15px 15px 15px;
+
+	}
+
 	.img-skill {
 		width: 75px;
 	}
