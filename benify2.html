@@ -142,6 +142,56 @@
     <script>
     $(document).foundation('topbar', {scrolltop: false});
     </script>
+
+    <!--script>
+    $('.modal').on('shown.bs.modal', function (e) {
+        $('.changesrc').each(function(){
+        //Change the src of each img
+        $(this).attr('src', 'imgs/WF1.png');
+        });
+    })
+    </script-->
+
+    <script>
+      $(window).on('shown.bs.modal', function() {
+
+        console.log("HELLOA");
+        $('.changesrc').each(function(){
+        //Change the src of each img
+        $(this).attr('src', 'imgs/benify-sketch-still.jpg');
+        });
+
+        $('.changesrc2').each(function(){
+        //Change the src of each img
+        $(this).attr('src', 'imgs/benify-wireframes-still.jpg');
+        });
+
+        $('.changesrc3').each(function(){
+        //Change the src of each img
+        $(this).attr('src', 'imgs/benify-digital-still.jpg');
+        });
+
+      });
+      $(window).on('hide.bs.modal', function() {
+        $('.changesrc').each(function(){
+        //Change the src of each img
+        $(this).attr('src', 'imgs/portfolio-modal-gifs/benify-sketch-2.gif');
+        });
+
+        $('.changesrc2').each(function(){
+        //Change the src of each img
+        $(this).attr('src', 'imgs/portfolio-modal-gifs/benify-wireframes-2.gif');
+        });
+
+        $('.changesrc3').each(function(){
+        //Change the src of each img
+        $(this).attr('src', 'imgs/portfolio-modal-gifs/benify-digital-2.gif');
+        });
+      });
+
+
+    </script>
+
   </head>
 
 
@@ -151,7 +201,7 @@
 <div style=" background-color:#8ea1af; padding-bottom:200px;">
 <!--img src="imgs/timeline-background.png" style="position:absolute; width:40%; margin-left:18%; margin-top:30vh;"-->
   <div style="text-align:center;">
-    <img src="imgs/design-process-loop.gif" style="width:100%; overflow:hidden; max-width:1000px; height:auto;">
+    <img src="imgs/design-process-loop.gif" style="width:130%; max-width:1000px; height:auto;">
   </div>
   <div style="text-align:center;">
     <h3 style="opacity:0.5; font-size:80%;"></h3>
@@ -174,8 +224,8 @@
           </div>
         </div>
         <div style="text-align:center;" class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
-          <a style="cursor:pointer;" data-toggle="modal" data-target="#WF-1" data-whatever="@mdo">
-            <img src="imgs/WF1-2.png" style="width:90%; max-width:300px;">
+          <a id="openBtn" style="cursor:pointer;" data-toggle="modal" data-target="#WF-1" data-whatever="@mdo">
+            <img class="changesrc" src="imgs/portfolio-modal-gifs/benify-sketch-2.gif" style="width:90%; max-width:300px;">
           </a>
         </div>
       </div>
@@ -193,7 +243,7 @@
         </div>
         <div style="text-align:center;" class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
           <a style="cursor:pointer;" data-toggle="modal" data-target="#WF-2" data-whatever="@mdo">
-            <img src="imgs/WF2-2.png" style="width:90%; max-width:300px;">
+            <img class="changesrc2" src="imgs/portfolio-modal-gifs/benify-wireframes-2.gif" style="width:90%; max-width:300px;">
           </a>
         </div>
       </div>
@@ -211,7 +261,7 @@
         </div>
         <div style="text-align:center;" class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
           <a style="cursor:pointer;" data-toggle="modal" data-target="#WF-3" data-whatever="@mdo">
-            <img src="imgs/WF3-2.png" style="width:90%; max-width:300px;">
+            <img class="changesrc3" src="imgs/portfolio-modal-gifs/benify-digital-2.gif" style="width:90%; max-width:300px;">
           </a>
         </div>
       </div>
@@ -240,14 +290,14 @@
   <!--MODAL - WF1-->
   <div class="modal fade" id="WF-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
   <div class="modal-dialog" role="document">
-    <div class="modal-content" >
+    <div class="modal-content" id="hello" >
       <div style="text-align:center;"class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="exampleModalLabel">Wireframe Sketches</h4>
       </div>
       <div style="text-align:center; margin-top:20px;" class="modal-body">
         <form action="mailto:olund90@gmail.com" method="post" enctype="text/plain">
-          <img style="border-radius:5px; width:100%; max-width:500px;" src="imgs/WF1.png" alt="" />
+          <img style="border-radius:5px; width:100%; max-width:500px;" src="imgs/portfolio-modal-gifs/benify-sketch-3.gif" alt="" />
         <!--TEXT Transaction Emails-->
         <div class="modal-text-container">
         <p style="font-size:13px;">
@@ -279,7 +329,7 @@
       </div>
       <div style="text-align:center; margin-top:20px;" class="modal-body">
         <form action="mailto:olund90@gmail.com" method="post" enctype="text/plain">
-          <img style="border-radius:5px; width:100%; max-width:500px;" src="imgs/WF2.png" alt="" />
+          <img style="border-radius:5px; width:100%; max-width:500px;" src="imgs/portfolio-modal-gifs/benify-wireframes1.gif" alt="" />
         <!--TEXT Transaction Emails-->
         <div class="modal-text-container">
         <p style="font-size:13px;">
@@ -311,7 +361,7 @@
         </div>
         <div style="text-align:center; margin-top:20px;" class="modal-body">
           <form action="mailto:olund90@gmail.com" method="post" enctype="text/plain">
-            <img style="border-radius:5px; width:100%; max-width:500px;" src="imgs/WF3.png" alt="" />
+            <img style="border-radius:5px; width:100%; max-width:500px;" src="imgs/portfolio-modal-gifs/benify-digital-1.gif" alt="" />
           <!--TEXT Transaction Emails-->
           <div class="modal-text-container">
           <p style="font-size:13px;">
