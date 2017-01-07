@@ -35,6 +35,13 @@
       });
     });
     </script>
+    <script>
+    $(document).ready(function() {
+      $(".scroll-up").click(function(event){
+          $('html, body').animate({scrollTop: '-=597px'}, 800);
+      });
+    });
+    </script>
   </head>
 
 
@@ -45,7 +52,11 @@
     <div class="top-bar2">
       Oscar Lund
     </div>
-
+   
+    <a class="scroll-up"><div class="float-bar2">
+        UP<br>
+        <!--i class="fa fa-sort-desc" aria-hidden="true"></i-->
+      </div></a>
     <a class="scroll"><div class="float-bar">
       NEXT<br>
       <!--i class="fa fa-sort-desc" aria-hidden="true"></i-->
