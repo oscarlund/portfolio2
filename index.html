@@ -5,13 +5,13 @@
       <meta name = "viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1.0">
       <meta name="author" content="oscarlund">
 
-      <title>Oscar Lund - Designer</title>
+      <title>olund.co</title>
       <!--Bootstrap-->
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <link href="css/stylesheet.css" rel="stylesheet">
       <link href="css/layout.css" rel="stylesheet">
       <link href="css/animate.css" rel="stylesheet">
-      <link rel="icon" type="image/png" href="/imgs/fav2.png" />
+      <link rel="icon" type="image/png" href="/imgs/fav1.png" />
       <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900" rel="stylesheet">
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -24,7 +24,7 @@
       <script type="text/javascript">
       $(function(){
       $(".typeeffect").typed({
-        strings: ["Hello, my name is Oscar, <br /> I am a"],
+        strings: ["Hello, my name is Oscar Lund, <br /> I am "],
         startDelay: 3000,
         typeSpeed: 100,
         backDelay: 750,
@@ -38,7 +38,7 @@
         function shift(){
             $('.typed-cursor').hide();
             $(".typeeffect2").typed({
-              strings: ["Designer.", "Musician.", "Ski-junkie.", "M.Sc. Engineer", "Business Owner."],
+              strings: ["a UX / UI Designer.", "a Musician / Producer.", "a Ski Junkie.", "an M.Sc. Engineer", "a Business Owner."],
               typeSpeed: 100,
               backDelay: 1000,
               backSpeed:30,
@@ -142,22 +142,47 @@
     <script>
     $(document).foundation('topbar', {scrolltop: false});
     </script>
+
+    <!--script>
+    var scrollPos = 0;
+
+      $(window)
+        .on('show.bs.modal', function (){
+          scrollPos = $('body').scrollTop();
+          $('body').css({
+          overflow: 'hidden',
+          position: 'fixed',
+          top : -scrollPos
+          });
+          })
+        .on('hide.bs.modal', function (){
+        $('body').css({
+        overflow: '',
+        position: '',
+        top: ''
+        }).scrollTop(scrollPos);
+      });
+
+    </script-->
+    <script>
+      $(window)
+        .on("show.bs.modal", function () {
+          var top = $("body").scrollTop(); $("body").css('position','fixed').css('overflow','hidden').css('top',-top).css('width','100%').css('height',top+5000);
+        })
+        .on("hide.bs.modal", function () {
+          var top = $("body").position().top; $("body").css('position','relative').css('overflow','hidden').css('height','auto').css('top',0).scrollTop(-top);
+        });
+    </script>
   </head>
 
 
   <body id="zero" style="position: relative;">
 
 <!--TOP Gif-->
-      <div class="" style="background:url(imgs/computer_background.gif);
+      <div class="" style="background:url(imgs/desktop_background-min.jpg);
       background-repeat:no-repeat; background-size:cover; background-position:center; background-color:#76c6d4;
       text-align:center; height: 100vh; width:100%; overflow:hidden;">
-
-        <div class="write-on write-on-text" style="position:relative; color:#eee; font-family:'open sans', sans-serif;">
-          <span style="font-weight:300; color:#eee;" class="typeeffect"></span>
-          <span style="font-weight:600; color:#ddd;" class="typeeffect2"></span>
-        </div>
-
-        <div class="arrow-down-container" style="position:absolute; width:100%;">
+        <div class="arrow-down-container">
         <div class="heart-conten">
           <a href="#one"><div class="arrow arrow-down"><img style="width:20px;" src="imgs/arrow-down_200.png"></img></div> </a>
           <div clas="heart heart1"></div>
@@ -165,6 +190,13 @@
           <div clas="heart heart3"></div>
         </div>
         </div>
+
+        <div class="write-on write-on-text" style="position:relative; color:#eee; font-family:'open sans', sans-serif;">
+          <span style="font-weight:400; color:#eee;" class="typeeffect"></span>
+          <span style="font-weight:700; color:#ede896;" class="typeeffect2"></span>
+        </div>
+
+
       </div>
 <!--TOP Gif END-->
 
@@ -217,9 +249,9 @@
           <h2 class"text-in-1" style="">Oscar Lund. Freelance Designer.</h2>
           <p class="h3top" >Sharp, value adding design for web & print.</p>
         <div>
-          <a target="_blank" rel="noreferrer" href="http://oscarlund.com/dailyui">
+          <a target="_blank" rel="noreferrer" href="benify2.html">
             <div style="text-align:center; margin-top:50px;">
-            <button class="button_black" style="font-size:12px; font-weight:400; opacity:1;">My DailyUI Challenge.<img class="bounce-hover" src="imgs/arrow-right-eee.svg"></button></p>
+            <button class="button_black" style="font-size:12px; font-weight:400; opacity:1;">This is Why You Need a Designer.<img class="bounce-hover" src="imgs/arrow-right-eee.svg"></button></p>
             </div>
           </a>
         </div>
@@ -313,9 +345,10 @@
 
         <div class="portfolio web" data-cat="web">
           <div class="portfolio-wrapper">
+            <a data-toggle="modal" data-target="#aceup_homepage" data-whatever="@mdo">
             <img src="imgs/portfolios/web/homepage_aceup1.jpg" alt="" />
             <div class="label">
-              <div class="label-text">
+              <div style="margin-left:-3px;" class="label-text">
                 <a data-toggle="modal" data-target="#AUHomepage" data-whatever="@mdo" class="text-title">Home Page Design</a>
                 <span class="text-category">Ace-Up Inc.</span>
               </div>
@@ -470,7 +503,7 @@
           </div>
           <div class="modal-body">
             <form action="mailto:olund90@gmail.com" method="post" enctype="text/plain">
-              <img style="border-radius:5px; width:100%; max-width:400px;" src="imgs/portfolios/web/transaction_email1.jpg" alt="" />
+              <img style="border-radius:5px; width:100%; max-width:400px;" src="imgs/portfolio-modal-gifs/transaction_emails_ace-up.gif" alt="" />
 
 
               <!--div class="form-group">
@@ -503,6 +536,50 @@
       </div>
       </div>
       <!--MODAL1 End-->
+
+      <!--Aceup homepage MODAL-->
+      <div class="modal fade" id="aceup_homepage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" >
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="exampleModalLabel">Website Design & Development</h4>
+          </div>
+          <div class="modal-body">
+            <form action="mailto:olund90@gmail.com" method="post" enctype="text/plain">
+              <img style="border-radius:5px; width:100%; max-width:400px;" src="imgs/portfolio-modal-gifs/homepage_aceup_modal.gif" alt="" />
+
+
+              <!--div class="form-group">
+                <label for="recipient-name" class="control-label">Your Email Adress:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+
+              <div class="form-group">
+                <label for="message-text" class="control-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div-->
+            <!--TEXT Transaction Emails-->
+            <div class="modal-text-container">
+            <p>
+              I made the sketches, wireframes, and final design of all transaction emails for the coaching platform, <a target="_blank" rel="noreferrer" href="http://www.ace-up.com">Ace-up.com</a>. The process involved pencil skeching and <a target="_blank" rel="noreferrer" href="https://www.aketchapp.com">Sketch</a>.
+
+              <!--br><br><b>Tools in use:</b><br>
+              <img style="width:50px; margin:0; padding:0;" src="imgs/app-icon-sketch.png">
+            </p-->
+            </div>
+            <!--TEXT Transaction Emails END-->
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <!--button type="button" class="btn btn-primary">Send message</button-->
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <!--Aceup homepage MODAL End-->
 
       <!--MODAL VC Movie-->
       <div class="modal fade" id="VCMovieModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
@@ -558,7 +635,7 @@
         <div class="modal-content" >
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="exampleModalLabel">Transaction Email Layout</h4>
+            <h4 class="modal-title" id="exampleModalLabel">Fashion Concept</h4>
           </div>
           <div class="modal-body">
             <form action="mailto:olund90@gmail.com" method="post" enctype="text/plain">
@@ -579,9 +656,9 @@
             <p>
               I made the sketches, wireframes, and final design of all transaction emails for the coaching platform, <a target="_blank" rel="noreferrer" href="http://www.ace-up.com">Ace-up.com</a>. The process involved pencil skeching and <a target="_blank" rel="noreferrer" href="https://www.aketchapp.com">Sketch</a>.
 
-              <br><br><b>Tools in use:</b><br>
+              <!--br><br><b>Tools in use:</b><br>
               <img style="width:50px; margin:0; padding:0;" src="imgs/app-icon-sketch.png">
-            </p>
+            </p-->
             </div>
             <!--TEXT Transaction Emails END-->
             </form>
