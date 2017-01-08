@@ -315,4 +315,14 @@ h4 a {
     align:center;
 }
 
+.modal-footer{
+  text-align: center;
+}
+.btn{
+  padding:13px 55px !important;
+  border-radius:5px;
+}
+.close{
+  font-size:40px;
+}
 }
