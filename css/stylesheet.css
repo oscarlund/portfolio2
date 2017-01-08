@@ -7,10 +7,18 @@ body{
 		width: 100%;
 		border:0;
 		margin:0;
+		position:relative;
+		height:auto;
 }
 
 body.modal-open {
-    overflow: visible;
+    overflow: hidden;
+		position:relative;
+}
+
+
+.modal-open{
+	overflow: hidden;
 }
 
 svg {
@@ -154,6 +162,7 @@ a {
 /* ---------------------------------------------- /*
  * CONTAINERS
 /* ---------------------------------------------- */
+
 .modal-text-container {
 	margin:20px 15% 0 15%;
 }
@@ -175,6 +184,9 @@ a {
 
 .arrow-down-container{
 	bottom:20px;
+	width:100%;
+	position:relative;
+	top:95%;
 }
 
 .container-white{
@@ -947,7 +959,6 @@ background: rgba(0, 0, 0, 0.2);
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  position: absolute;
   animation-duration: 3s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
