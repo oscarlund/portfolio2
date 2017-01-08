@@ -298,6 +298,10 @@ h4 a {
     margin-left:25px;
   }
 
+  .container-ui h4{
+    margin-left:0px;
+  }
+
   .modal-dialog {
   width: 100%;
   height: 100%;
