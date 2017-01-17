@@ -27,9 +27,10 @@ body {
   text-align:center;
   margin:auto;
   font-size:13px;
+  font-weight:500;
   line-height: 45px;
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: 6px;
   opacity: 0.95;
   z-index:5;
 }
