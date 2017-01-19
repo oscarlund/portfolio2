@@ -27,7 +27,7 @@ body {
   text-align:center;
   margin:auto;
   font-size:13px;
-  font-weight:500;
+  font-weight: 500;
   line-height: 45px;
   text-transform: uppercase;
   letter-spacing: 6px;
@@ -54,7 +54,7 @@ body {
 .float-bar{
   position:fixed;
   top:90vh;
-  right:75px;
+  right:5%;
   float:right;
   background-color: ;
   color:#000;
@@ -66,11 +66,12 @@ body {
   opacity: 1;
   font-size: 12px;
   border: 1px solid #000;
+  border-radius: 2px;
 }
 .float-bar2{
   position:fixed;
   top:84vh;
-  right:75px;
+  right:5%;
   float:right;
   background-color: ;
   color:#000;
@@ -83,6 +84,7 @@ body {
   font-size: 12px;
   border: 1px solid #000;
   opacity:0.2;
+  border-radius: 2px;
 }
 
 .container-ui{
@@ -257,6 +259,15 @@ h4 a {
   margin-left: 25px;
 }
 
+@media screen and (max-width:800px){
+  .float-bar{
+    visibility: hidden;
+  }
+  .float-bar2{
+    visibility: hidden;
+
+  }
+}
 
 @media screen and (max-width:768px){
   .float-bar{
