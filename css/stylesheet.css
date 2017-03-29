@@ -1091,6 +1091,10 @@ float:left;
 
 
 @media screen and (max-width: 768px){
+
+.topgif {
+	display:none;
+}
 .navbar-nav {
 	height: 95vh;
 	padding-top:14vh;
