@@ -26,12 +26,14 @@ svg {
 }
 
 .design-img {
-background: url(https://raw.githubusercontent.com/oscarlund/portfolio2/gh-pages/imgs/backpic4bw.jpg) no-repeat center center;
+/*background: url(https://raw.githubusercontent.com/oscarlund/portfolio2/gh-pages/imgs/backpic4bw.jpg) no-repeat center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-size: cover;
+        background-size: cover;*/
+	background-color:#fff;
 	padding: 20vh 0 20vh 0;
+	height:100vh;
 }
 
 .overflowhidden{
@@ -1155,6 +1157,7 @@ float:left;
 background: #ffffff;
 	background-color:#ffffff;
 	padding: 0;
+	height:auto;
 }
 	
 .navbar-nav {
