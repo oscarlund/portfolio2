@@ -1159,14 +1159,15 @@ float:left;
             position: absolute !important;
             z-index: 20;
             width: 100%;
-            top: 50px;
+            background:#111;
         }
         .collapse.in {
             display: block;
             position: absolute;
             z-index: 20;
             width: 100%;
-            top: 50px;
+	    background:#111;
+            
         }
         .navbar-collapse
         {
