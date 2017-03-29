@@ -31,6 +31,7 @@ background: url(https://raw.githubusercontent.com/oscarlund/portfolio2/gh-pages/
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+	padding: 20vh 0 20vh 0;
 }
 
 .overflowhidden{
