@@ -35,6 +35,9 @@ svg {
 	padding: 20vh 0 20vh 0;
 	height:100vh;
 }
+.topgif {
+display:none;
+}
 
 .overflowhidden{
 	margin: 0;
