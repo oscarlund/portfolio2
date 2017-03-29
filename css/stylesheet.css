@@ -26,7 +26,7 @@ svg {
 }
 
 .design-img {
-background: url(imgs/backpic4bw.jpg) no-repeat center center;
+background: url(https://raw.githubusercontent.com/oscarlund/portfolio2/gh-pages/imgs/backpic4bw.jpg) no-repeat center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
