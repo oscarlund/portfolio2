@@ -1149,6 +1149,29 @@ float:left;
 
 
 @media screen and (max-width: 768px){
+
+/*NAV TEST*/
+        .collapsing
+        {
+            position: absolute !important;
+            z-index: 20;
+            width: 100%;
+            top: 50px;
+        }
+        .collapse.in {
+            display: block;
+            position: absolute;
+            z-index: 20;
+            width: 100%;
+            top: 50px;
+        }
+        .navbar-collapse
+        {
+            max-height: none !important;
+        }
+ /*NAV TEST*/
+	
+
 .topgif {
 	display:none;
 }
