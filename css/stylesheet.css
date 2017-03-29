@@ -25,6 +25,14 @@ svg {
   width:50%;
 }
 
+.design-img {
+background: url(imgs/backpic4bw.jpg) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
 .overflowhidden{
 	margin: 0;
 	height: 100%;
