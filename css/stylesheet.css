@@ -25,6 +25,10 @@ svg {
   width:50%;
 }
 
+#filters {
+	display:none;
+}
+
 .design-img {
 /*background: url(https://raw.githubusercontent.com/oscarlund/portfolio2/gh-pages/imgs/backpic4bw.jpg) no-repeat center center;
         -webkit-background-size: cover;
