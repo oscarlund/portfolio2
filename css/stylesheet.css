@@ -1141,6 +1141,11 @@ float:left;
 .topgif {
 	display:none;
 }
+
+#one {
+	background:none;
+}
+	
 .navbar-nav {
 	height: 95vh;
 	padding-top:14vh;
