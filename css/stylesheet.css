@@ -241,8 +241,9 @@ a {
 }
 */
 .container-grey {
-    background: #313746; /* For browsers that do not support gradients */
-		text-align:center;
+    /*background: #313746;*/ /* For browsers that do not support gradients */
+    text-align:center;
+    background: #000;
 }
 
 .container-pdf {
